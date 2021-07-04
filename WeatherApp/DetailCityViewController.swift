@@ -136,12 +136,13 @@ extension DetailCityViewController: UICollectionViewDataSource, UICollectionView
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let wCompact = (self.traitCollection.horizontalSizeClass == .compact)
         let hCompact = (self.traitCollection.verticalSizeClass == .compact)
+        let wRegular = (self.traitCollection.horizontalSizeClass == .regular)
         
         var hSize: CGFloat = detailCollectionView.bounds.height
         var wSize: CGFloat = detailCollectionView.bounds.width
         
-        if wCompact && hCompact {
-            hSize = self.view.bounds.height * 0.6
+        if (wCompact && hCompact) || (wRegular && hCompact) {
+            hSize = self.view.bounds.height * 0.7
             wSize = self.view.bounds.height * 0.6
         }
         

@@ -127,7 +127,7 @@ class HomeViewController: BaseViewController, HomeDisplayLogic {
 }
 
 extension HomeViewController: UITextFieldDelegate {
-    func textFieldDidChangeSelection(_ textField:UITextField) {
+    func textFieldDidChangeSelection(_ textField: UITextField) {
         guard let text = textField.text else {
             return
         }
