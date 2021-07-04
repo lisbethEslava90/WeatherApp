@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,7 +48,6 @@
 				D4B7D22596410E8E5F43C330 /* Pods-WeatherApp.debug.xcconfig */,
 				5FDB56917FC961B5E8D8B21E /* Pods-WeatherApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,6 +72,7 @@
 		BCFA77D026923B29004C0174 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				BCFA77EB26923EA5004C0174 /* New Group */,
 				BCFA77D126923B29004C0174 /* AppDelegate.swift */,
 				BCFA77D326923B29004C0174 /* SceneDelegate.swift */,
 				BCFA77D526923B29004C0174 /* ViewController.swift */,
@@ -82,6 +82,13 @@
 				BCFA77DF26923B2B004C0174 /* Info.plist */,
 			);
 			path = WeatherApp;
+			sourceTree = "<group>";
+		};
+		BCFA77EB26923EA5004C0174 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		E96C2E7FDE42A12470DCD8F4 /* Frameworks */ = {
@@ -359,6 +366,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QP98C3PJN3;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,6 +387,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QP98C3PJN3;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
