@@ -20,6 +20,7 @@ class DetailCityViewController: BaseViewController, DetailCityDisplayLogic {
     // MARK: Outlets
     @IBOutlet weak var detailCollectionView: UICollectionView!
     @IBOutlet weak var titleViewLabel: UILabel!
+    @IBOutlet weak var collectConstraint: NSLayoutConstraint!
     
     // MARK: var-let
     var initialViewModel: DetailCity.LoadInitalData.ViewModel!
@@ -116,7 +117,7 @@ class DetailCityViewController: BaseViewController, DetailCityDisplayLogic {
     }
 }
 
-extension DetailCityViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+extension DetailCityViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return initialViewModel != nil ? initialViewModel.details.count : 0
     }
@@ -130,5 +131,20 @@ extension DetailCityViewController: UICollectionViewDataSource, UICollectionView
         cell.tempImage.image = UIImage(named: detailDay.stateAbbr ?? "")
         cell.dataWeather = detailDay
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let wCompact = (self.traitCollection.horizontalSizeClass == .compact)
+        let hCompact = (self.traitCollection.verticalSizeClass == .compact)
+        
+        var hSize: CGFloat = detailCollectionView.bounds.height
+        var wSize: CGFloat = detailCollectionView.bounds.width
+        
+        if wCompact && hCompact {
+            hSize = self.view.bounds.height * 0.6
+            wSize = self.view.bounds.height * 0.6
+        }
+        
+        return CGSize(width: wSize, height: hSize)
     }
 }

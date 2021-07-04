@@ -172,16 +172,10 @@
 		BCFA77EC26923F14004C0174 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				BCFA77F726923F31004C0174 /* CityTableViewCell.swift */,
-				BCFA77FB26923F38004C0174 /* DetailCollectionViewCell.swift */,
-				BCFA77FC26923F38004C0174 /* DetailCollectionViewCell.xib */,
-				BCFA77F826923F32004C0174 /* CityTableViewCell.xib */,
-				BCFA77F026923F28004C0174 /* AlertManager.swift */,
-				BCFA780026923F3F004C0174 /* WeatherTableViewCell.swift */,
-				BCFA77FF26923F3F004C0174 /* WeatherTableViewCell.xib */,
-				BCFA77ED26923F28004C0174 /* AlertsView.swift */,
-				BCFA77EE26923F28004C0174 /* AlertsView.xib */,
-				BCFA77EF26923F28004C0174 /* AlertViewBody.swift */,
+				BCFA78482692407C004C0174 /* Alerts */,
+				BCFA78472692406F004C0174 /* Weather */,
+				BCFA784626924062004C0174 /* DetailCity */,
+				BCFA784526924051004C0174 /* City */,
 				BCFA77F126923F28004C0174 /* BaseViewController.swift */,
 			);
 			name = CustomViews;
@@ -213,9 +207,30 @@
 		BCFA781726923F8E004C0174 /* ModuleApp */ = {
 			isa = PBXGroup;
 			children = (
+				BCFA784426924034004C0174 /* DetailCity */,
+				BCFA784326924024004C0174 /* LaunchScreen */,
+				BCFA784226924015004C0174 /* Home */,
+			);
+			name = ModuleApp;
+			sourceTree = "<group>";
+		};
+		BCFA784226924015004C0174 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BCFA782A26923FB0004C0174 /* HomeRouter.swift */,
+				BCFA782C26923FB0004C0174 /* HomeViewController.swift */,
+				BCFA782726923FAF004C0174 /* HomeViewController.xib */,
+				BCFA782626923FAF004C0174 /* HomeWorker.swift */,
 				BCFA782826923FAF004C0174 /* HomeInteractor.swift */,
 				BCFA782926923FAF004C0174 /* HomeModels.swift */,
 				BCFA782B26923FB0004C0174 /* HomePresenter.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		BCFA784326924024004C0174 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
 				BCFA783626923FB7004C0174 /* LaunchScreen.storyboard */,
 				BCFA783826923FB7004C0174 /* LaunchScreenInteractor.swift */,
 				BCFA783726923FB7004C0174 /* LaunchScreenModels.swift */,
@@ -223,10 +238,13 @@
 				BCFA783426923FB7004C0174 /* LaunchScreenRouter.swift */,
 				BCFA783926923FB7004C0174 /* LaunchScreenViewController.swift */,
 				BCFA783A26923FB7004C0174 /* LaunchScreenWorker.swift */,
-				BCFA782A26923FB0004C0174 /* HomeRouter.swift */,
-				BCFA782C26923FB0004C0174 /* HomeViewController.swift */,
-				BCFA782726923FAF004C0174 /* HomeViewController.xib */,
-				BCFA782626923FAF004C0174 /* HomeWorker.swift */,
+			);
+			name = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		BCFA784426924034004C0174 /* DetailCity */ = {
+			isa = PBXGroup;
+			children = (
 				BCFA781826923FA7004C0174 /* DetailCityInteractor.swift */,
 				BCFA781E26923FA8004C0174 /* DetailCityModels.swift */,
 				BCFA781926923FA7004C0174 /* DetailCityPresenter.swift */,
@@ -235,7 +253,45 @@
 				BCFA781A26923FA8004C0174 /* DetailCityViewController.xib */,
 				BCFA781C26923FA8004C0174 /* DetailCityWorker.swift */,
 			);
-			name = ModuleApp;
+			name = DetailCity;
+			sourceTree = "<group>";
+		};
+		BCFA784526924051004C0174 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				BCFA77F826923F32004C0174 /* CityTableViewCell.xib */,
+				BCFA77F726923F31004C0174 /* CityTableViewCell.swift */,
+			);
+			name = City;
+			sourceTree = "<group>";
+		};
+		BCFA784626924062004C0174 /* DetailCity */ = {
+			isa = PBXGroup;
+			children = (
+				BCFA77FB26923F38004C0174 /* DetailCollectionViewCell.swift */,
+				BCFA77FC26923F38004C0174 /* DetailCollectionViewCell.xib */,
+			);
+			name = DetailCity;
+			sourceTree = "<group>";
+		};
+		BCFA78472692406F004C0174 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				BCFA780026923F3F004C0174 /* WeatherTableViewCell.swift */,
+				BCFA77FF26923F3F004C0174 /* WeatherTableViewCell.xib */,
+			);
+			name = Weather;
+			sourceTree = "<group>";
+		};
+		BCFA78482692407C004C0174 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				BCFA77F026923F28004C0174 /* AlertManager.swift */,
+				BCFA77ED26923F28004C0174 /* AlertsView.swift */,
+				BCFA77EE26923F28004C0174 /* AlertsView.xib */,
+				BCFA77EF26923F28004C0174 /* AlertViewBody.swift */,
+			);
+			name = Alerts;
 			sourceTree = "<group>";
 		};
 		E96C2E7FDE42A12470DCD8F4 /* Frameworks */ = {

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -10,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DetailCollectionViewCell" customModule="MetaWeatherLE" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DetailCollectionViewCell" customModule="WeatherApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="264" height="525"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -60,7 +61,9 @@
                             <constraint firstItem="2Sv-FZ-9ER" firstAttribute="centerX" secondItem="ZUB-gQ-SLL" secondAttribute="centerX" id="2bF-NV-IAx"/>
                             <constraint firstItem="gCE-li-K6M" firstAttribute="centerX" secondItem="ZUB-gQ-SLL" secondAttribute="centerX" id="5Mg-xC-ZcA"/>
                             <constraint firstAttribute="bottom" secondItem="NYl-z5-SNX" secondAttribute="bottom" id="BzZ-tm-PzS"/>
-                            <constraint firstItem="gCE-li-K6M" firstAttribute="top" secondItem="2Sv-FZ-9ER" secondAttribute="bottom" constant="32" id="EoW-pD-YRr"/>
+                            <constraint firstItem="gCE-li-K6M" firstAttribute="top" secondItem="2Sv-FZ-9ER" secondAttribute="bottom" constant="32" id="EoW-pD-YRr">
+                                <variation key="heightClass=compact-widthClass=compact" constant="8"/>
+                            </constraint>
                             <constraint firstItem="NYl-z5-SNX" firstAttribute="leading" secondItem="ZUB-gQ-SLL" secondAttribute="leading" id="IPJ-N2-t5u"/>
                             <constraint firstItem="hiX-2O-eiV" firstAttribute="top" secondItem="gCE-li-K6M" secondAttribute="bottom" constant="16" id="N1v-VI-3a8"/>
                             <constraint firstItem="2Sv-FZ-9ER" firstAttribute="leading" secondItem="ZUB-gQ-SLL" secondAttribute="leading" constant="32" id="Stq-dd-XER"/>
